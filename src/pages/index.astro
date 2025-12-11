@@ -1,16 +1,30 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import ContactCard from '../components/ContactCard.astro';
+import Hero from '../components/Hero.astro';
+import WorkExperience from '../components/WorkExperience.astro';
+import ProfessionalExperience from '../components/ProfessionalExperience.astro';
+import Footer from '../components/Footer.astro';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Andreina Di Brigida - Shopify & WordPress Developer">
+  <Header />
+  <ContactCard />
+  <section class="main-container max-w-7xl mx-auto px-4 py-20">
+    <Hero />
+    <WorkExperience />
+    <ProfessionalExperience />
+    <section class="section-aboutme">
+      <div class="info-container"> 
+        <ul class="socialm">
+          <li><a href="https://www.linkedin.com/in/andreina-di-brigida" aria-label="linkedin" target="_blank" class="contact"><i class="fa-brands fa-linkedin"></i></a></li>
+          <li><a href="https://github.com/Akiarakira" target="_blank" aria-label="GitHub" class="contact"><i class="fa-brands fa-github"></i></a></li>
+          <li><a href="https://twitter.com/andree_gabby" target="_blank" aria-label="Twitter" class="contact"><i class="fa-brands fa-twitter"></i></a></li>
+          <li><a href="mailto:Andreinadibrigida8@gmail.com" target="_blank" aria-label="Correo" class="contact"><i class="fa-regular fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </section>
+  </section>
+  <Footer />
+</Layout>
