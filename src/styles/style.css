@@ -399,3 +399,8 @@
     opacity: 0;
   }
 }
+
+/* Work Experience layout tweaks */
+.workExperience-section .container {
+  margin-top: 2.5rem;
+}
