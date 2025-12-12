@@ -9,10 +9,12 @@ import sitemap from '@astrojs/sitemap';
 
 import robotsTxt from 'astro-robots-txt';
 
+const site = process.env.SITE || (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : undefined);
+
 // https://astro.build/config
 export default defineConfig({
-  site: process.env.SITE,
-  base: process.env.BASE || '/',
+  site,
+  base: '/',
   integrations: [alpinejs(), sitemap(), robotsTxt()],
 
   vite: {
