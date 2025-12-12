@@ -39,33 +39,52 @@
 }
 
 .lightMode .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 0.75rem 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   --tw-bg-opacity: 1;
-  background-color: rgb(244 114 182 / var(--tw-bg-opacity, 1));
+  background-image: linear-gradient(135deg, rgba(251, 113, 133, 1), rgba(244, 114, 182, 1), rgba(129, 140, 248, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  --tw-shadow: 0 12px 22px -6px rgba(236, 72, 153, 0.55);
+  --tw-shadow-colored: 0 12px 22px -6px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition: transform 150ms ease-out, box-shadow 150ms ease-out, filter 150ms ease-out;
 }
 
 .lightMode .btn-primary:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(190 24 93 / var(--tw-bg-opacity, 1));
+  transform: translateY(-1px) scale(1.03);
+  filter: brightness(1.05);
+  --tw-shadow: 0 18px 30px -8px rgba(236, 72, 153, 0.65);
+  --tw-shadow-colored: 0 18px 30px -8px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .lightMode .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 0.7rem 1.8rem;
+  font-weight: 500;
   border-width: 2px;
   --tw-border-opacity: 1;
   border-color: rgb(244 114 182 / var(--tw-border-opacity, 1));
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(252, 231, 243, 1));
   --tw-text-opacity: 1;
   color: rgb(244 114 182 / var(--tw-text-opacity, 1));
+  box-shadow: 0 8px 18px -8px rgba(244, 114, 182, 0.4);
+  transition: transform 150ms ease-out, box-shadow 150ms ease-out, background-color 150ms ease-out;
 }
 
 .lightMode .btn-secondary:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 231 243 / var(--tw-bg-opacity, 1));
+  transform: translateY(-1px) scale(1.03);
+  background-image: linear-gradient(135deg, rgba(252, 231, 243, 1), rgba(251, 207, 232, 1));
+  box-shadow: 0 14px 24px -10px rgba(244, 114, 182, 0.5);
 }
 
 .lightMode .card-project {
@@ -171,33 +190,53 @@
 }
 
 .darkMode .btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 0.75rem 1.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
   --tw-bg-opacity: 1;
-  background-color: rgb(124 58 237 / var(--tw-bg-opacity, 1));
+  background-image: linear-gradient(135deg, rgba(236, 72, 153, 1), rgba(168, 85, 247, 1), rgba(56, 189, 248, 1));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
-  --tw-shadow: 0 10px 30px rgba(124, 58, 237, 0.2);
-  --tw-shadow-colored: 0 10px 30px var(--tw-shadow-color);
+  --tw-shadow: 0 14px 30px -8px rgba(15, 23, 42, 0.9);
+  --tw-shadow-colored: 0 14px 30px -8px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition: transform 150ms ease-out, box-shadow 150ms ease-out, filter 150ms ease-out;
 }
 
 .darkMode .btn-primary:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 51 234 / var(--tw-bg-opacity, 1));
+  transform: translateY(-1px) scale(1.03);
+  filter: brightness(1.08);
+  --tw-shadow: 0 20px 40px -10px rgba(15, 23, 42, 1);
+  --tw-shadow-colored: 0 20px 40px -10px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .darkMode .btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  padding: 0.7rem 1.8rem;
+  font-weight: 500;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(124 58 237 / var(--tw-border-opacity, 1));
+  border-color: rgb(244 114 182 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
-  background-color: rgb(22 33 62 / var(--tw-bg-opacity, 1));
+  background-image: linear-gradient(135deg, rgba(30, 41, 59, 1), rgba(24, 31, 56, 1));
   --tw-text-opacity: 1;
-  color: rgb(124 58 237 / var(--tw-text-opacity, 1));
+  color: rgb(244 114 182 / var(--tw-text-opacity, 1));
+  box-shadow: 0 10px 26px -10px rgba(236, 72, 153, 0.6);
+  transition: transform 150ms ease-out, box-shadow 150ms ease-out, background-color 150ms ease-out;
 }
 
 .darkMode .btn-secondary:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(88 28 135 / var(--tw-bg-opacity, 1));
+  transform: translateY(-1px) scale(1.03);
+  background-image: linear-gradient(135deg, rgba(49, 46, 129, 1), rgba(30, 64, 175, 1));
+  box-shadow: 0 18px 32px -12px rgba(236, 72, 153, 0.8);
 }
 
 .darkMode .card-project {
