@@ -11,6 +11,8 @@ import robotsTxt from 'astro-robots-txt';
 
 // https://astro.build/config
 export default defineConfig({
+  site: process.env.SITE,
+  base: process.env.BASE || '/',
   integrations: [alpinejs(), sitemap(), robotsTxt()],
 
   vite: {
