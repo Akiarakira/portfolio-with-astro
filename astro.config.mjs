@@ -16,7 +16,11 @@ const base = process.env.BASE || '/';
 export default defineConfig({
   site,
   base,
-  integrations: [alpinejs(), sitemap(), robotsTxt()],
+  integrations: [alpinejs(), sitemap(), robotsTxt({
+    policy: [
+      { userAgent: '*', allow: '/' },
+    ],
+  })],
 
   vite: {
     plugins: [tailwindcss()]
