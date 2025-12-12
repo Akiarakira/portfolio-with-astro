@@ -1,41 +1,34 @@
 /* ============ LIGHT MODE ============ */
 
 .lightMode {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 232 255 / var(--tw-bg-opacity, 1));
-  --tw-text-opacity: 1;
-  color: rgb(107 33 168 / var(--tw-text-opacity, 1));
+  background-color: var(--color-cream);
+  color: var(--color-ink);
 }
 
 .lightMode header {
-  --tw-bg-opacity: 1;
-  background-color: rgb(233 213 255 / var(--tw-bg-opacity, 1));
+  background-color: var(--color-surface);
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .lightMode header a {
-  --tw-text-opacity: 1;
-  color: rgb(107 33 168 / var(--tw-text-opacity, 1));
+  color: var(--color-ink);
 }
 
 .lightMode header a:hover {
-  --tw-text-opacity: 1;
-  color: rgb(244 114 182 / var(--tw-text-opacity, 1));
+  color: var(--color-rose-accent);
 }
 
 .lightMode .contact-card {
-  --tw-bg-opacity: 1;
-  background-color: rgb(233 213 255 / var(--tw-bg-opacity, 1));
+  background-color: var(--color-surface);
   --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .lightMode .contact-card h4 {
-  --tw-text-opacity: 1;
-  color: rgb(107 33 168 / var(--tw-text-opacity, 1));
+  color: var(--color-ink);
 }
 
 .lightMode .btn-primary {
@@ -47,7 +40,7 @@
   font-weight: 600;
   letter-spacing: 0.02em;
   --tw-bg-opacity: 1;
-  background-image: linear-gradient(135deg, rgba(251, 113, 133, 1), rgba(244, 114, 182, 1), rgba(129, 140, 248, 1));
+  background-image: linear-gradient(135deg, var(--color-pink), var(--color-lilac), var(--color-sky));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
   --tw-shadow: 0 12px 22px -6px rgba(236, 72, 153, 0.55);
@@ -73,17 +66,17 @@
   font-weight: 500;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(244 114 182 / var(--tw-border-opacity, 1));
-  background-image: linear-gradient(135deg, rgba(255, 255, 255, 1), rgba(252, 231, 243, 1));
+  border-color: var(--color-rose-accent);
+  background-image: linear-gradient(135deg, var(--color-cream), var(--color-surface));
   --tw-text-opacity: 1;
-  color: rgb(244 114 182 / var(--tw-text-opacity, 1));
+  color: var(--color-rose-accent);
   box-shadow: 0 8px 18px -8px rgba(244, 114, 182, 0.4);
   transition: transform 150ms ease-out, box-shadow 150ms ease-out, background-color 150ms ease-out;
 }
 
 .lightMode .btn-secondary:hover {
   transform: translateY(-1px) scale(1.03);
-  background-image: linear-gradient(135deg, rgba(252, 231, 243, 1), rgba(251, 207, 232, 1));
+  background-image: linear-gradient(135deg, var(--color-surface), var(--color-surface-2));
   box-shadow: 0 14px 24px -10px rgba(244, 114, 182, 0.5);
 }
 
@@ -92,9 +85,8 @@
   border-radius: 1rem;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(244 114 182 / var(--tw-border-opacity, 1));
-  --tw-bg-opacity: 1;
-  background-color: rgb(233 213 255 / var(--tw-bg-opacity, 1));
+  border-color: var(--color-rose-accent);
+  background-color: var(--color-surface);
   padding: 2.25rem 1.5rem 1.75rem;
   --tw-shadow: 0 12px 20px -4px rgb(0 0 0 / 0.18);
   --tw-shadow-colored: 0 12px 20px -4px var(--tw-shadow-color);
@@ -109,7 +101,7 @@
   width: 5.5rem;
   height: 1.6rem;
   border-radius: 0.5rem;
-  background-image: linear-gradient(90deg, #fb923c, #f472b6, #6366f1);
+  background-image: linear-gradient(90deg, var(--color-sky), var(--color-pink), var(--color-primary));
   box-shadow: 0 8px 14px rgba(15, 23, 42, 0.25);
   opacity: 0.96;
   transform: rotate(-3deg);
@@ -123,17 +115,15 @@
 }
 
 .lightMode .card-project {
-  color: #6b21a8;
+  color: var(--color-ink);
 }
 
 .lightMode .card-project h3 {
-  --tw-text-opacity: 1;
-  color: rgb(244 114 182 / var(--tw-text-opacity, 1));
+  color: var(--color-rose-accent);
 }
 
 .lightMode .section-title {
-  --tw-text-opacity: 1;
-  color: rgb(244 114 182 / var(--tw-text-opacity, 1));
+  color: var(--color-rose-accent);
 }
 
 .section-title {
@@ -190,8 +180,7 @@
 }
 
 .lightMode .subtitle-elegant {
-  --tw-text-opacity: 1;
-  color: rgb(244 114 182 / var(--tw-text-opacity, 1));
+  color: var(--color-rose-accent);
 }
 
 .lightMode .subtitle-elegant::after {
@@ -203,51 +192,43 @@
 }
 
 .lightMode footer {
-  --tw-bg-opacity: 1;
-  background-color: rgb(244 114 182 / var(--tw-bg-opacity, 1));
-}
+    background-color: rgba(107, 33, 168, 0.12);
+  }
 
 /* ============ DARK MODE ============ */
 
 .darkMode {
-  --tw-bg-opacity: 1;
-  background-color: rgb(26 26 46 / var(--tw-bg-opacity, 1));
-  --tw-text-opacity: 1;
-  color: rgb(233 213 255 / var(--tw-text-opacity, 1));
+  background-color: var(--color-cream);
+  color: var(--color-ink);
 }
 
 .darkMode header {
   border-bottom-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(124 58 237 / var(--tw-border-opacity, 1));
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 33 62 / var(--tw-bg-opacity, 1));
+  border-color: var(--color-rose-light);
+  background-color: var(--color-surface);
 }
 
 .darkMode header a {
-  --tw-text-opacity: 1;
-  color: rgb(233 213 255 / var(--tw-text-opacity, 1));
+  color: var(--color-ink);
 }
 
 .darkMode header a:hover {
-  --tw-text-opacity: 1;
-  color: rgb(124 58 237 / var(--tw-text-opacity, 1));
+  color: var(--color-rose-accent);
 }
 
 .darkMode .contact-card {
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(124 58 237 / var(--tw-border-opacity, 1));
-  --tw-bg-opacity: 1;
-  background-color: rgb(22 33 62 / var(--tw-bg-opacity, 1));
+  border-color: var(--color-rose-light);
+  background-color: var(--color-surface);
   --tw-shadow: 0 10px 30px rgba(124, 58, 237, 0.2);
   --tw-shadow-colored: 0 10px 30px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .darkMode .contact-card h4 {
-  --tw-text-opacity: 1;
-  color: rgb(233 213 255 / var(--tw-text-opacity, 1));
+  color: var(--color-ink);
 }
 
 .darkMode .btn-primary {
@@ -259,7 +240,7 @@
   font-weight: 600;
   letter-spacing: 0.02em;
   --tw-bg-opacity: 1;
-  background-image: linear-gradient(135deg, rgba(236, 72, 153, 1), rgba(168, 85, 247, 1), rgba(56, 189, 248, 1));
+  background-image: linear-gradient(135deg, var(--color-pink), var(--color-lilac), var(--color-sky));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
   --tw-shadow: 0 14px 30px -8px rgba(15, 23, 42, 0.9);
@@ -285,18 +266,18 @@
   font-weight: 500;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(244 114 182 / var(--tw-border-opacity, 1));
+  border-color: var(--color-rose-accent);
   --tw-bg-opacity: 1;
-  background-image: linear-gradient(135deg, rgba(30, 41, 59, 1), rgba(24, 31, 56, 1));
+  background-image: linear-gradient(135deg, var(--color-surface), var(--color-surface-2));
   --tw-text-opacity: 1;
-  color: rgb(244 114 182 / var(--tw-text-opacity, 1));
+  color: var(--color-rose-accent);
   box-shadow: 0 10px 26px -10px rgba(236, 72, 153, 0.6);
   transition: transform 150ms ease-out, box-shadow 150ms ease-out, background-color 150ms ease-out;
 }
 
 .darkMode .btn-secondary:hover {
   transform: translateY(-1px) scale(1.03);
-  background-image: linear-gradient(135deg, rgba(49, 46, 129, 1), rgba(30, 64, 175, 1));
+  background-image: linear-gradient(135deg, var(--color-purple), var(--color-primary));
   box-shadow: 0 18px 32px -12px rgba(236, 72, 153, 0.8);
 }
 
@@ -305,9 +286,9 @@
   border-radius: 1rem;
   border-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(124 58 237 / var(--tw-border-opacity, 1));
+  border-color: var(--color-rose-light);
   --tw-bg-opacity: 1;
-  background-color: rgb(22 33 62 / var(--tw-bg-opacity, 1));
+  background-color: var(--color-surface);
   padding: 2.25rem 1.5rem 1.75rem;
   --tw-shadow: 0 12px 30px rgba(15, 23, 42, 0.5);
   --tw-shadow-colored: 0 12px 30px var(--tw-shadow-color);
@@ -322,7 +303,7 @@
   width: 5.5rem;
   height: 1.6rem;
   border-radius: 0.5rem;
-  background-image: linear-gradient(90deg, #f97316, #ec4899, #4f46e5);
+  background-image: linear-gradient(90deg, var(--color-sky), var(--color-pink), var(--color-primary));
   box-shadow: 0 10px 18px rgba(0, 0, 0, 0.55);
   opacity: 0.96;
   transform: rotate(-3deg);
@@ -336,18 +317,15 @@
 }
 
 .darkMode .card-project h3 {
-  --tw-text-opacity: 1;
-  color: rgb(233 213 255 / var(--tw-text-opacity, 1));
+  color: var(--color-ink);
 }
 
 .darkMode .card-project p {
-  --tw-text-opacity: 1;
-  color: rgb(233 213 255 / var(--tw-text-opacity, 1));
+  color: var(--color-ink);
 }
 
 .darkMode .section-title {
-  --tw-text-opacity: 1;
-  color: rgb(233 213 255 / var(--tw-text-opacity, 1));
+  color: var(--color-ink);
 }
 
 .darkMode .section-title::after {
@@ -356,8 +334,7 @@
 }
 
 .darkMode .subtitle-elegant {
-  --tw-text-opacity: 1;
-  color: rgb(233 213 255 / var(--tw-text-opacity, 1));
+  color: var(--color-ink);
 }
 
 .darkMode .subtitle-elegant::after {
@@ -368,32 +345,29 @@
 .darkMode footer {
   border-top-width: 2px;
   --tw-border-opacity: 1;
-  border-color: rgb(124 58 237 / var(--tw-border-opacity, 1));
+  border-color: var(--color-rose-light);
   --tw-bg-opacity: 1;
-  background-color: rgb(22 33 62 / var(--tw-bg-opacity, 1));
+  background-color: var(--color-surface);
 }
 
 .darkMode .text-gray-600 {
-  --tw-text-opacity: 1;
-  color: rgb(233 213 255 / var(--tw-text-opacity, 1));
+  color: var(--color-ink);
 }
 
 .darkMode .text-gray-700 {
-  --tw-text-opacity: 1;
-  color: rgb(243 232 255 / var(--tw-text-opacity, 1));
+  color: var(--color-ink);
 }
 
 .darkMode .bg-blush {
   --tw-bg-opacity: 1;
-  background-color: rgb(88 28 135 / var(--tw-bg-opacity, 1));
+  background-color: var(--color-blush);
   --tw-text-opacity: 1;
-  color: rgb(233 213 255 / var(--tw-text-opacity, 1));
+  color: var(--color-ink);
 }
-
 
 .darkMode .border-rose-light {
   --tw-border-opacity: 1;
-  border-color: rgb(124 58 237 / var(--tw-border-opacity, 1));
+  border-color: var(--color-rose-light);
 }
 
 /* ============ TOOLS / TECH STACK SECTION ============ */
@@ -531,8 +505,8 @@
 }
 
 .tools-section .tech-alpine {
-  -webkit-mask-image: url("https://api.iconify.design/simple-icons:alpinejs.svg");
-  mask-image: url("https://api.iconify.design/simple-icons:alpinejs.svg");
+  -webkit-mask-image: url("https://api.iconify.design/simple-icons:alpinedotjs.svg");
+  mask-image: url("https://api.iconify.design/simple-icons:alpinedotjs.svg");
 }
 
 .tools-section .tech-htmx {
