@@ -325,6 +325,200 @@
   border-color: rgb(124 58 237 / var(--tw-border-opacity, 1));
 }
 
+/* ============ TOOLS / TECH STACK SECTION ============ */
+
+.tools-section {
+  position: relative;
+}
+
+.tools-section .tools-card {
+  position: relative;
+  border-radius: 1.75rem;
+  padding: 3.25rem 2.25rem 2.25rem;
+  border-width: 2px;
+  border-style: dashed;
+}
+
+.tools-section .tools-chip {
+  position: absolute;
+  top: -0.9rem;
+  left: 1.75rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 1.25rem;
+  border-radius: 0.6rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transform: rotate(-3deg);
+  box-shadow: 0 10px 18px rgba(15, 23, 42, 0.35);
+  z-index: 2;
+}
+
+.tools-section .tools-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.tools-section .logoImg {
+  width: 3.5rem;
+  height: 3.5rem;
+  display: inline-block;
+  background-image: linear-gradient(135deg, #fb7185, #f472b6, #a855f7, #22d3ee);
+  background-size: 200% 200%;
+  animation: tools-gradient 6s ease-in-out infinite;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  filter: drop-shadow(0 10px 16px rgba(15, 23, 42, 0.45));
+  transition: transform 150ms ease-out, filter 150ms ease-out;
+}
+
+.tools-section .logoImg:hover {
+  transform: translateY(-4px) scale(1.07);
+  filter: drop-shadow(0 16px 26px rgba(15, 23, 42, 0.6));
+}
+
+@keyframes tools-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Iconify masks (fill with gradient) */
+.tools-section .tech-html {
+  -webkit-mask-image: url("https://api.iconify.design/simple-icons:html5.svg");
+  mask-image: url("https://api.iconify.design/simple-icons:html5.svg");
+}
+
+.tools-section .tech-css {
+  -webkit-mask-image: url("https://api.iconify.design/simple-icons:css3.svg");
+  mask-image: url("https://api.iconify.design/simple-icons:css3.svg");
+}
+
+.tools-section .tech-javascript {
+  -webkit-mask-image: url("https://api.iconify.design/simple-icons:javascript.svg");
+  mask-image: url("https://api.iconify.design/simple-icons:javascript.svg");
+}
+
+.tools-section .tech-typescript {
+  -webkit-mask-image: url("https://api.iconify.design/simple-icons:typescript.svg");
+  mask-image: url("https://api.iconify.design/simple-icons:typescript.svg");
+}
+
+.tools-section .tech-php {
+  -webkit-mask-image: url("https://api.iconify.design/simple-icons:php.svg");
+  mask-image: url("https://api.iconify.design/simple-icons:php.svg");
+}
+
+.tools-section .tech-node {
+  -webkit-mask-image: url("https://api.iconify.design/logos:nodejs-icon.svg");
+  mask-image: url("https://api.iconify.design/logos:nodejs-icon.svg");
+}
+
+.tools-section .tech-react {
+  -webkit-mask-image: url("https://api.iconify.design/logos:react.svg");
+  mask-image: url("https://api.iconify.design/logos:react.svg");
+}
+
+.tools-section .tech-tailwind {
+  -webkit-mask-image: url("https://api.iconify.design/logos:tailwindcss-icon.svg");
+  mask-image: url("https://api.iconify.design/logos:tailwindcss-icon.svg");
+}
+
+.tools-section .tech-shopify {
+  -webkit-mask-image: url("https://api.iconify.design/simple-icons:shopify.svg");
+  mask-image: url("https://api.iconify.design/simple-icons:shopify.svg");
+}
+
+.tools-section .tech-wordpress {
+  -webkit-mask-image: url("https://api.iconify.design/logos:wordpress-icon.svg");
+  mask-image: url("https://api.iconify.design/logos:wordpress-icon.svg");
+}
+
+.tools-section .tech-sass {
+  -webkit-mask-image: url("https://api.iconify.design/logos:sass.svg");
+  mask-image: url("https://api.iconify.design/logos:sass.svg");
+}
+
+.tools-section .tech-figma {
+  -webkit-mask-image: url("https://api.iconify.design/logos:figma.svg");
+  mask-image: url("https://api.iconify.design/logos:figma.svg");
+}
+
+.tools-section .tech-alpine {
+  -webkit-mask-image: url("https://api.iconify.design/simple-icons:alpinejs.svg");
+  mask-image: url("https://api.iconify.design/simple-icons:alpinejs.svg");
+}
+
+.tools-section .tech-htmx {
+  -webkit-mask-image: url("https://api.iconify.design/simple-icons:htmx.svg");
+  mask-image: url("https://api.iconify.design/simple-icons:htmx.svg");
+}
+
+.tools-section .tech-mysql {
+  -webkit-mask-image: url("https://api.iconify.design/logos:mysql-icon.svg");
+  mask-image: url("https://api.iconify.design/logos:mysql-icon.svg");
+}
+
+.tools-section .tech-mongodb {
+  -webkit-mask-image: url("https://api.iconify.design/logos:mongodb-icon.svg");
+  mask-image: url("https://api.iconify.design/logos:mongodb-icon.svg");
+}
+
+.tools-section .tech-hubspot {
+  -webkit-mask-image: url("https://api.iconify.design/simple-icons:hubspot.svg");
+  mask-image: url("https://api.iconify.design/simple-icons:hubspot.svg");
+}
+
+@media (max-width: 640px) {
+  .tools-section .tools-card {
+    padding: 2.25rem 1.75rem 1.9rem;
+  }
+
+  .tools-section .tools-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    row-gap: 1.25rem;
+  }
+}
+
+/* Light mode colors for tools card */
+.lightMode .tools-section .tools-card {
+  border-color: rgba(244, 114, 182, 0.6);
+  background-color: rgba(107, 33, 168, 0.12);
+}
+
+.lightMode .tools-section .tools-chip {
+  background-image: linear-gradient(135deg, #fb7185, #f472b6, #a855f7);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(236, 72, 153, 0.55);
+}
+
+/* Dark mode colors for tools card */
+.darkMode .tools-section .tools-card {
+  border-color: rgba(148, 163, 184, 0.4);
+  background-color: rgba(15, 23, 42, 0.9);
+}
+
+.darkMode .tools-section .tools-chip {
+  background-image: linear-gradient(135deg, #ec4899, #a855f7, #22d3ee);
+  color: #fdf2ff;
+  box-shadow: 0 12px 26px rgba(15, 23, 42, 0.9);
+}
+
 /* Timeline helpers */
 
 .timeline-item {
