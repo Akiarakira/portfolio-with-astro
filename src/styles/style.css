@@ -282,25 +282,6 @@
     var(--tw-shadow);
 }
 
-.lightMode .card-project::before {
-  content: "";
-  position: absolute;
-  top: -0.9rem;
-  left: 1.5rem;
-  width: 5.5rem;
-  height: 1.6rem;
-  border-radius: 0.5rem;
-  background-image: linear-gradient(
-    90deg,
-    var(--color-sky),
-    var(--color-pink),
-    var(--color-primary)
-  );
-  box-shadow: 0 8px 14px rgba(15, 23, 42, 0.25);
-  opacity: 0.96;
-  transform: rotate(-3deg);
-}
-
 .lightMode .card-project:hover {
   transform: translateY(-4px) rotate(-0.5deg);
   --tw-shadow: 0 18px 28px -6px rgb(0 0 0 / 0.22);
@@ -316,6 +297,88 @@
 
 .lightMode .card-project h3 {
   color: var(--color-rose-accent);
+}
+
+.card-project-thumbnail {
+  position: relative;
+  width: calc(100% + 3rem);
+  height: 12rem;
+  margin: -2.25rem -1.5rem 1.75rem;
+  border-radius: calc(1rem - 2px) calc(1rem - 2px) 0 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.12);
+}
+
+.card-project-thumbnail::after {
+  content: "";
+  position: absolute;
+  left: 1.5rem;
+  bottom: -0.8rem;
+  width: 5.5rem;
+  height: 1.6rem;
+  border-radius: 0.5rem;
+  background-image: linear-gradient(
+    90deg,
+    var(--color-sky),
+    var(--color-pink),
+    var(--color-primary)
+  );
+  box-shadow: 0 8px 14px rgba(15, 23, 42, 0.25);
+  opacity: 0.96;
+  transform: rotate(-3deg);
+  z-index: 1;
+}
+
+.card-project.clickbid .card-project-thumbnail {
+  background-image: url("../assets/projects/clickbid-thumb.png");
+}
+
+.card-project.mbtek .card-project-thumbnail {
+  background-image: url("../assets/projects/mbtek-thumb.png");
+}
+
+.card-project.ateamwork .card-project-thumbnail {
+  background-image: url("../assets/projects/a-teamwork-thumb.png");
+}
+
+.card-project.exologic .card-project-thumbnail {
+  background-image: url("../assets/projects/exologic-thumb.png");
+}
+
+.card-project.worklyfe .card-project-thumbnail {
+  background-image: url("../assets/projects/Worklyfe.png");
+}
+
+.card-project.paigekelly .card-project-thumbnail {
+  background-image: url("../assets/projects/paige-kelly-interior-design-thumb.png");
+}
+
+.card-project.vrume .card-project-thumbnail {
+  background-image: url("../assets/projects/vrume-thumb.png");
+}
+
+.card-project.quotescout .card-project-thumbnail {
+  background-image: url("../assets/projects/quote-scouts-thumb.png");
+}
+
+.card-project.getwindowsestimate .card-project-thumbnail {
+  background-image: url("../assets/projects/get-windows-estimate-thumb.png");
+}
+
+.card-project.bhwpricing .card-project-thumbnail {
+  background-image: url("../assets/projects/bhw-pricing-thumb.png");
+}
+
+.card-project.ppw .card-project-thumbnail {
+  background-image: url("../assets/projects/full-height/prospector-web-dashboard-full-height.jpg");
+}
+
+.lightMode .card-project::before,
+.darkMode .card-project::before {
+  content: none;
 }
 
 .lightMode .section-title {
@@ -547,25 +610,6 @@
   box-shadow:
     var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
     var(--tw-shadow);
-}
-
-.darkMode .card-project::before {
-  content: "";
-  position: absolute;
-  top: -0.9rem;
-  left: 1.5rem;
-  width: 5.5rem;
-  height: 1.6rem;
-  border-radius: 0.5rem;
-  background-image: linear-gradient(
-    90deg,
-    var(--color-sky),
-    var(--color-pink),
-    var(--color-primary)
-  );
-  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.55);
-  opacity: 0.96;
-  transform: rotate(-3deg);
 }
 
 .darkMode .card-project:hover {
