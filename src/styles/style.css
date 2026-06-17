@@ -816,7 +816,7 @@
 /* Light mode colors for tools card */
 .lightMode .tools-section .tools-card {
   border-color: rgba(244, 114, 182, 0.6);
-  background-color: rgba(107, 33, 168, 0.12);
+  background-color: rgba(107, 33, 168, 0.15);
 }
 
 .lightMode .tools-section .tools-chip {
@@ -828,7 +828,7 @@
 /* Dark mode colors for tools card */
 .darkMode .tools-section .tools-card {
   border-color: rgba(148, 163, 184, 0.4);
-  background-color: rgba(15, 23, 42, 0.9);
+  background-color: rgba(15, 23, 42, 0.7);
 }
 
 .darkMode .tools-section .tools-chip {
