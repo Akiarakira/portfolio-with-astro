@@ -10,7 +10,7 @@ This document contains the current projects displayed in the portfolio, plus pla
 - **URL**: https://github.com/joseorono/focus-space
 - **Description**: Privacy-first Chrome extension for deep work. Cleans distracting tabs and browser history by keyword/category, runs Pomodoro focus sessions with task tracking, and sends real-time alerts when distracting tabs open during a session. I also built the companion marketing site (`focusspace-self.vercel.app`) to showcase the extension and drive installs.
 - **Technologies**: Plasmo, React, TypeScript, Tailwind CSS, Material UI, Redux Toolkit, Chrome Extensions API
-- **Image**: src\assets\projects\focusspace-thumb.png
+- **Image**: src\assets\projects\focusspace.png
 
 ### Morales Solutions
 
