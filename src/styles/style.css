@@ -25,20 +25,128 @@
   color: var(--color-rose-accent);
 }
 
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.9rem 1.35rem;
+  border-radius: 9999px;
+  backdrop-filter: blur(10px);
+  animation: contact-card-float 4s ease-in-out infinite;
+}
+
+.contact-title-card {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+.contact-card-status {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #22c55e;
+  border: 2px solid var(--color-surface);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.contact-card-status::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: contact-status-ping 2s ease-out infinite;
+}
+
+.contact-card-icons {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.contact-icon-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  color: #fff;
+  transition:
+    transform 250ms ease,
+    box-shadow 250ms ease,
+    filter 250ms ease;
+}
+
+.contact-icon-whatsapp .contact-card-status {
+  top: -2px;
+  right: -2px;
+  width: 10px;
+  height: 10px;
+}
+
+.contact-icon-whatsapp {
+  background: linear-gradient(135deg, #34d399, var(--color-sky));
+}
+
+.contact-icon-email {
+  background: linear-gradient(135deg, var(--color-pink), var(--color-lilac));
+}
+
+.contact-icon-btn:hover {
+  transform: translateY(-3px) scale(1.08);
+  filter: brightness(1.08);
+}
+
+@keyframes contact-card-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes contact-status-ping {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2.2);
+    opacity: 0;
+  }
+}
+
 .lightMode .contact-card {
-  background-color: var(--color-surface);
-  --tw-shadow:
-    0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored:
-    0 10px 15px -3px var(--tw-shadow-color),
-    0 4px 6px -4px var(--tw-shadow-color);
+  background-color: rgba(238, 244, 255, 0.85);
+  border: 1px solid transparent;
+  background-image:
+    linear-gradient(rgba(238, 244, 255, 0.85), rgba(238, 244, 255, 0.85)),
+    linear-gradient(
+      120deg,
+      var(--color-sky),
+      var(--color-lilac),
+      var(--color-pink)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  --tw-shadow: 0 16px 32px -10px rgba(107, 33, 168, 0.28);
+  --tw-shadow-colored: 0 16px 32px -10px var(--tw-shadow-color);
   box-shadow:
     var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
     var(--tw-shadow);
 }
 
 .lightMode .contact-card h4 {
-  color: var(--color-ink);
+  color: var(--color-rose-accent);
 }
 
 .lightMode .btn-primary {
@@ -530,6 +638,65 @@
   background-color: rgba(107, 33, 168, 0.12);
 }
 
+.footer-icon-btn {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  isolation: isolate;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.footer-icon-svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  font-size: 1.35rem;
+  color: var(--color-ink);
+  border: 1px solid rgba(156, 156, 156, 0.466);
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.footer-icon-bg {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    var(--color-sky) 0%,
+    var(--color-lilac) 25%,
+    var(--color-pink) 50%,
+    var(--color-purple) 75%,
+    var(--color-sky) 100%
+  );
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.footer-icon-btn:hover .footer-icon-bg {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.footer-icon-btn:hover .footer-icon-svgContainer {
+  background-color: rgba(156, 156, 156, 0.466);
+  color: #fff;
+}
+
 /* ============ DARK MODE ============ */
 
 .darkMode {
@@ -553,19 +720,27 @@
 }
 
 .darkMode .contact-card {
-  border-width: 2px;
-  --tw-border-opacity: 1;
-  border-color: var(--color-rose-light);
-  background-color: var(--color-surface);
-  --tw-shadow: 0 10px 30px rgba(124, 58, 237, 0.2);
-  --tw-shadow-colored: 0 10px 30px var(--tw-shadow-color);
+  background-color: rgba(10, 28, 61, 0.85);
+  border: 1px solid transparent;
+  background-image:
+    linear-gradient(rgba(10, 28, 61, 0.85), rgba(10, 28, 61, 0.85)),
+    linear-gradient(
+      120deg,
+      var(--color-sky),
+      var(--color-lilac),
+      var(--color-pink)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  --tw-shadow: 0 16px 34px -8px rgba(0, 0, 0, 0.7);
+  --tw-shadow-colored: 0 16px 34px -8px var(--tw-shadow-color);
   box-shadow:
     var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000),
     var(--tw-shadow);
 }
 
 .darkMode .contact-card h4 {
-  color: var(--color-ink);
+  color: var(--color-rose-accent);
 }
 
 .darkMode .btn-primary {
