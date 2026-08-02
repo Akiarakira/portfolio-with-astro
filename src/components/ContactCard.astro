@@ -29,6 +29,7 @@ const contactLinks = [
   x-data="{ open: false }"
   @keydown.escape.window="open = false"
   @click.outside="open = false"
+  @touchstart.outside="open = false"
 >
   <div
     class="contact-panel"
