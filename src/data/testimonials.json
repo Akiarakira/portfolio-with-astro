@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Jose Orono",
+    "role": "Tech Lead",
+    "company": "Exologic",
+    "avatar": "",
+    "rating": 5,
+    "quote": "Andreina is the kind of developer every team wants: she takes ownership, ships fast, and her front-end work always looks polished. She turned rough mockups into pixel-perfect, high-converting pages."
+  },
+  {
+    "name": "Maria Rodriguez",
+    "role": "Marketing Manager",
+    "company": "A-TeamWork",
+    "avatar": "",
+    "rating": 5,
+    "quote": "Our Shopify store finally loads fast and looks beautiful on mobile. Andreina improved our Lighthouse score dramatically and our conversion rate followed."
+  },
+  {
+    "name": "Ana Verdugo",
+    "role": "Founder",
+    "company": "soyanaverdugo.com",
+    "avatar": "",
+    "rating": 5,
+    "quote": "She understood my brand from day one and translated it into a website that truly feels like me. Working with her was easy, warm, and professional."
+  }
+]
