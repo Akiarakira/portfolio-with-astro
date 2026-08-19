@@ -2,29 +2,26 @@
 
 const themeToggle = document.querySelector("#themeToggle");
 const bodyElement = document.querySelector("#body");
+const THEME_KEY = "portfolio-theme";
 
-if (themeToggle && bodyElement) {
-  const THEME_KEY = "theme";
-
+if (bodyElement) {
   function getPreferredTheme() {
-    return localStorage.getItem(THEME_KEY) || "dark";
+    return localStorage.getItem(THEME_KEY) === "light" ? "light" : "dark";
   }
 
   function applyTheme(theme) {
-    if (theme === "dark") {
-      bodyElement.classList.add("darkMode");
-      bodyElement.classList.remove("lightMode");
-      themeToggle.checked = true;
-    } else {
-      bodyElement.classList.add("lightMode");
-      bodyElement.classList.remove("darkMode");
-      themeToggle.checked = false;
+    const isDark = theme === "dark";
+    bodyElement.classList.toggle("darkMode", isDark);
+    bodyElement.classList.toggle("lightMode", !isDark);
+
+    if (themeToggle) {
+      themeToggle.checked = isDark;
     }
   }
 
   applyTheme(getPreferredTheme());
 
-  themeToggle.addEventListener("change", function () {
+  themeToggle?.addEventListener("change", function () {
     const next = themeToggle.checked ? "dark" : "light";
     localStorage.setItem(THEME_KEY, next);
     applyTheme(next);
