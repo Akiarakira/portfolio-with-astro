@@ -1,5 +1,5 @@
 ---
-import SeeMyWorkButton from "./SeeMyWorkButton.astro";
+
 ---
 
 <header
@@ -45,7 +45,24 @@ import SeeMyWorkButton from "./SeeMyWorkButton.astro";
       <!-- <li><a href="#personal-projects" class="text-rose-dark font-semibold hover:text-rose-accent transition">Personal Projects</a></li> -->
     </ul>
     <div class="flex items-center gap-4">
-      <SeeMyWorkButton href="#projects" label="See My Work" />
+      <div
+        class="language-switcher flex items-center gap-2"
+        aria-label="Language selector"
+      >
+        <button
+          type="button"
+          class="language-option text-xs font-semibold"
+          data-language="en"
+          aria-pressed="true">EN</button
+        >
+        <span class="text-xs text-muted" aria-hidden="true">/</span>
+        <button
+          type="button"
+          class="language-option text-xs font-semibold"
+          data-language="es"
+          aria-pressed="false">ES</button
+        >
+      </div>
       <div class="dark-mode-btns">
         <label
           class="relative inline-flex items-center cursor-pointer select-none"

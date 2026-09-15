@@ -21,9 +21,10 @@ import SeeMyWorkButton from "./SeeMyWorkButton.astro";
         Andreina Di Brigida
       </h2>
       <p class="description text-lg text-gray-700 mb-8 leading-relaxed">
-        I have over 4 years of experience building beautiful, high-converting
-        websites with Shopify and WordPress. Specialized in custom development,
-        UX optimization, and elegant design.
+        Front-End Engineer and Shopify Specialist with 4 years of experience,
+        focused on Shopify 2.0, Liquid, Cart API, GraphQL integrations, and
+        conversion-focused, mobile-first storefronts across Shopify, WordPress,
+        and custom Node.js ecosystems.
       </p>
       <div class="flex gap-4">
         <a
@@ -104,11 +105,15 @@ import SeeMyWorkButton from "./SeeMyWorkButton.astro";
 
 <script>
   if (typeof window !== "undefined") {
-    const roles = [
-      "Full-Stack Developer",
-      "Shopify Specialist",
-      "WordPress Expert",
-    ];
+    const roleSets = {
+      en: ["Full-Stack Developer", "Shopify Specialist", "WordPress Expert"],
+      es: [
+        "Desarrolladora Full-Stack",
+        "Especialista en Shopify",
+        "Experta en WordPress",
+      ],
+    };
+    let roles = roleSets[document.documentElement.dataset.language || "en"];
 
     const textEl = document.getElementById("typewriter-text");
 
@@ -116,6 +121,13 @@ import SeeMyWorkButton from "./SeeMyWorkButton.astro";
       let roleIndex = 0;
       let charIndex = 0;
       let isDeleting = false;
+
+      window.addEventListener("languagechange", (event) => {
+        roles = roleSets[event.detail.language] || roleSets.en;
+        roleIndex = 0;
+        charIndex = 0;
+        isDeleting = false;
+      });
 
       const typingSpeed = 100;
       const deletingSpeed = 60;
