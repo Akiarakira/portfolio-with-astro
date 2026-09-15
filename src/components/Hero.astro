@@ -1,6 +1,8 @@
 ---
 import heroImage from "../assets/me/Akiara-hero.png";
 import SeeMyWorkButton from "./SeeMyWorkButton.astro";
+
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <section class="title-section relative pt-12 pb-20 overflow-hidden">
@@ -28,7 +30,7 @@ import SeeMyWorkButton from "./SeeMyWorkButton.astro";
       </p>
       <div class="flex gap-4">
         <a
-          href="/documents/Shopify Developer Andreina Di Brigida.pdf"
+          href={`${baseUrl}documents/Shopify Developer Andreina Di Brigida.pdf`}
           target="_blank"
           rel="noopener noreferrer"
           class="btn-primary inline-block"

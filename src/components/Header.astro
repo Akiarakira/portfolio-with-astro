@@ -1,5 +1,5 @@
 ---
-
+const baseUrl = import.meta.env.BASE_URL;
 ---
 
 <header
@@ -23,21 +23,21 @@
     >
       <li>
         <a
-          href="#projects"
+          href={`${baseUrl}#projects`}
           class="text-rose-dark font-semibold hover:text-rose-accent transition"
           >Projects</a
         >
       </li>
       <li>
         <a
-          href="#experience"
+          href={`${baseUrl}#experience`}
           class="text-rose-dark font-semibold hover:text-rose-accent transition"
           >Professional Experience</a
         >
       </li>
       <li>
         <a
-          href="#testimonials"
+          href={`${baseUrl}#testimonials`}
           class="text-rose-dark font-semibold hover:text-rose-accent transition"
           >Testimonials</a
         >
