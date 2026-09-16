@@ -764,66 +764,10 @@
   z-index: 1;
 }
 
-.card-project.clickbid .card-project-thumbnail {
-  background-image: url("../assets/projects/clickbid-thumb.png");
+.card-project-thumbnail {
+  display: block;
+  object-fit: cover;
 }
-
-.card-project.mbtek .card-project-thumbnail {
-  background-image: url("../assets/projects/mbtek-thumb.png");
-}
-
-.card-project.ateamwork .card-project-thumbnail {
-  background-image: url("../assets/projects/a-teamwork-thumb.png");
-}
-
-.card-project.exologic .card-project-thumbnail {
-  background-image: url("../assets/projects/exologic-thumb.png");
-}
-
-.card-project.worklyfe .card-project-thumbnail {
-  background-image: url("../assets/projects/Worklyfe.png");
-}
-
-.card-project.paigekelly .card-project-thumbnail {
-  background-image: url("../assets/projects/paige-kelly-interior-design-thumb.png");
-}
-
-.card-project.vrume .card-project-thumbnail {
-  background-image: url("../assets/projects/vrume-thumb.png");
-}
-
-.card-project.quotescout .card-project-thumbnail {
-  background-image: url("../assets/projects/quote-scouts-thumb.png");
-}
-
-.card-project.getwindowsestimate .card-project-thumbnail {
-  background-image: url("../assets/projects/get-windows-estimate-thumb.png");
-}
-
-.card-project.bhwpricing .card-project-thumbnail {
-  background-image: url("../assets/projects/bhw-pricing-thumb.png");
-}
-
-.card-project.ppw .card-project-thumbnail {
-  background-image: url("../assets/projects/prospector.jpg");
-}
-
-.card-project.focusspace .card-project-thumbnail {
-  background-image: url("../assets/projects/focusspace.png");
-}
-
-.card-project.focusspaceapp .card-project-thumbnail {
-  background-image: url("../assets/projects/App-focusspace.png");
-}
-
-.card-project.moralesolutions .card-project-thumbnail {
-  background-image: url("../assets/projects/morales-solution.png");
-}
-
-.card-project.anaverdugo .card-project-thumbnail {
-  background-image: url("../assets/projects/ana-verdugo.png");
-}
-
 .lightMode .card-project::before,
 .darkMode .card-project::before {
   content: none;
@@ -1804,8 +1748,9 @@
 }
 
 .testimonials-dot {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 1.5rem;
+  min-width: 1.5rem;
+  height: 1.5rem;
   padding: 0;
   border: none;
   border-radius: 999px;
@@ -1819,6 +1764,7 @@
 
 .testimonials-dot.is-active {
   width: 1.6rem;
+  min-width: 1.6rem;
   opacity: 1;
 }
 

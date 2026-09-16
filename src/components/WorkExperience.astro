@@ -1,4 +1,20 @@
 ---
+import { Image } from "astro:assets";
+import clickbidThumb from "../assets/projects/clickbid-thumb.png";
+import focusspaceImage from "../assets/projects/focusspace.png";
+import focusspaceAppImage from "../assets/projects/App-focusspace.png";
+import moralesSolutionsImage from "../assets/projects/morales-solution.png";
+import anaVerdugoImage from "../assets/projects/ana-verdugo.png";
+import mbtekThumb from "../assets/projects/mbtek-thumb.png";
+import aTeamworkThumb from "../assets/projects/a-teamwork-thumb.png";
+import exologicThumb from "../assets/projects/exologic-thumb.png";
+import worklyfeImage from "../assets/projects/Worklyfe.png";
+import paigeKellyThumb from "../assets/projects/paige-kelly-interior-design-thumb.png";
+import vrumeThumb from "../assets/projects/vrume-thumb.png";
+import quoteScoutsThumb from "../assets/projects/quote-scouts-thumb.png";
+import getWindowsEstimateThumb from "../assets/projects/get-windows-estimate-thumb.png";
+import bhwPricingThumb from "../assets/projects/bhw-pricing-thumb.png";
+import prospectorImage from "../assets/projects/prospector.jpg";
 import SeeMyWorkButton from "./SeeMyWorkButton.astro";
 
 interface Props {
@@ -24,7 +40,14 @@ const baseUrl = import.meta.env.BASE_URL;
     ]}
   >
     <div class="card-project focusspace" aria-label="FocusSpace" tabindex="0">
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={focusspaceImage}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">FocusSpace</h3>
         <p class="text-gray-600 mb-4">
@@ -69,7 +92,14 @@ const baseUrl = import.meta.env.BASE_URL;
       aria-label="FocusSpace Extension"
       tabindex="0"
     >
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={focusspaceAppImage}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">FocusSpace Extension</h3>
         <p class="text-gray-600 mb-4">
@@ -114,7 +144,14 @@ const baseUrl = import.meta.env.BASE_URL;
       aria-label="Morales Solutions"
       tabindex="0"
     >
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={moralesSolutionsImage}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">Morales Solutions</h3>
         <p class="text-gray-600 mb-4">
@@ -158,7 +195,14 @@ const baseUrl = import.meta.env.BASE_URL;
       </div>
     </div>
     <div class="card-project anaverdugo" aria-label="Ana Verdugo" tabindex="0">
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={anaVerdugoImage}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">Ana Verdugo</h3>
         <p class="text-gray-600 mb-4">
@@ -196,7 +240,14 @@ const baseUrl = import.meta.env.BASE_URL;
       </div>
     </div>
     <div class="card-project clickbid" aria-label="ClickBid" tabindex="0">
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={clickbidThumb}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">ClickBid</h3>
         <p class="text-gray-600 mb-4">
@@ -233,7 +284,14 @@ const baseUrl = import.meta.env.BASE_URL;
       </div>
     </div>
     <div class="card-project mbtek" aria-label="mbtek Page" tabindex="0">
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={mbtekThumb}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">mbTek</h3>
         <p class="text-gray-600 mb-4">
@@ -268,7 +326,14 @@ const baseUrl = import.meta.env.BASE_URL;
       aria-label="A-Teamwork page"
       tabindex="0"
     >
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={aTeamworkThumb}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">A-Teamwork</h3>
         <p class="text-gray-600 mb-4">
@@ -304,7 +369,14 @@ const baseUrl = import.meta.env.BASE_URL;
       </div>
     </div>
     <div class="card-project exologic" aria-label="Exologic" tabindex="0">
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={exologicThumb}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">Exologic</h3>
         <p class="text-gray-600 mb-4">
@@ -341,7 +413,14 @@ const baseUrl = import.meta.env.BASE_URL;
       </div>
     </div>
     <div class="card-project worklyfe" aria-label="Worklyfe" tabindex="0">
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={worklyfeImage}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">Worklyfe</h3>
         <p class="text-gray-600 mb-4">
@@ -369,7 +448,14 @@ const baseUrl = import.meta.env.BASE_URL;
       aria-label="Paige Kelly Interior Design"
       tabindex="0"
     >
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={paigeKellyThumb}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">Paige Kelly Interior Design</h3>
         <p class="text-gray-600 mb-4">
@@ -394,7 +480,14 @@ const baseUrl = import.meta.env.BASE_URL;
       </div>
     </div>
     <div class="card-project vrume" aria-label="Vrume" tabindex="0">
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={vrumeThumb}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">Vrume</h3>
         <p class="text-gray-600 mb-4">
@@ -425,7 +518,14 @@ const baseUrl = import.meta.env.BASE_URL;
       </div>
     </div>
     <div class="card-project quotescout" aria-label="Quotescout" tabindex="0">
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={quoteScoutsThumb}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">Quotescout</h3>
         <p class="text-gray-600 mb-4">
@@ -465,7 +565,14 @@ const baseUrl = import.meta.env.BASE_URL;
       aria-label="Get Windows Estimate"
       tabindex="0"
     >
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={getWindowsEstimateThumb}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">Get Windows Estimate</h3>
         <p class="text-gray-600 mb-4">
@@ -501,7 +608,14 @@ const baseUrl = import.meta.env.BASE_URL;
       </div>
     </div>
     <div class="card-project bhwpricing" aria-label="BHW Pricing" tabindex="0">
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={bhwPricingThumb}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">BHW Pricing</h3>
         <p class="text-gray-600 mb-4">
@@ -536,7 +650,14 @@ const baseUrl = import.meta.env.BASE_URL;
       aria-label="Prospector Web project"
       tabindex="0"
     >
-      <div class="card-project-thumbnail" aria-hidden="true"></div>
+      <Image
+        src={prospectorImage}
+        alt=""
+        class="card-project-thumbnail"
+        loading="lazy"
+        format="webp"
+        aria-hidden="true"
+      />
       <div class="mb-4">
         <h3 class="subtitle-elegant">Prospector Web</h3>
         <p class="text-gray-600 mb-4">

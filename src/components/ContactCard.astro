@@ -92,7 +92,6 @@ const contactLinks = [
     class="contact-toggle"
     :class="open && 'is-open'"
     :aria-expanded="open ? 'true' : 'false'"
-    aria-label="Open contact options"
     @click="open = !open"
   >
     <span class="contact-toggle-ring" aria-hidden="true"></span>
@@ -102,5 +101,6 @@ const contactLinks = [
     <i class="fa-solid fa-xmark contact-toggle-icon-close" aria-hidden="true"
     ></i>
     <span class="contact-toggle-bubble" aria-hidden="true">Hi!</span>
+    <span class="sr-only">Open contact options</span>
   </button>
 </div>
